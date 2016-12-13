@@ -1,6 +1,6 @@
 {
   "name": "sum-by",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Sum the elements of an array with an optional iteratee function",
   "main": "src/index.js",
   "scripts": {
