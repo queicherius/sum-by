@@ -48,8 +48,8 @@ npm run benchmark
 
 |                       | Size (uglify + gzip) | Performance        | Performance (with iteratee) |
 |-----------------------|----------------------|--------------------|-----------------------------|
-| sum-by                | 200 bytes            | 24,428,989 ops/sec | 7,038,146 ops/sec           |
-| lodash.sumby          | 5,235 bytes          | 22,262,343 ops/sec | 6,280,709 ops/sec           |
+| sum-by                | 200 bytes            | 26,315,054 ops/sec | 7,811,346 ops/sec           |
+| lodash.sumby          | 5,235 bytes          | 19,135,383 ops/sec | 7,312,857 ops/sec           |
 
 ## Licence
 
