@@ -25,7 +25,7 @@
     "url": "git+https://github.com/queicherius/sum-by.git"
   },
   "devDependencies": {
-    "abc-environment": "^1.1.0",
+    "abc-environment": "^2.0.0",
     "benchmark": "^2.1.2",
     "lodash.sumby": "^4.6.0"
   }
