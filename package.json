@@ -2,12 +2,10 @@
   "name": "sum-by",
   "version": "1.0.1",
   "description": "Sum the elements of an array with an optional iteratee function",
-  "main": "build/index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "abc test && abc lint",
-    "version": "abc build",
-    "build": "abc build",
-    "benchmark": "abc build && node benchmark/index.js"
+    "test": "jest --coverage && standard",
+    "benchmark": "node benchmark/index.js"
   },
   "author": "queicherius@gmail.com",
   "license": "MIT",
@@ -25,8 +23,9 @@
     "url": "git+https://github.com/queicherius/sum-by.git"
   },
   "devDependencies": {
-    "abc-environment": "^2.0.0",
     "benchmark": "^2.1.2",
-    "lodash.sumby": "^4.6.0"
+    "jest": "^23.6.0",
+    "lodash.sumby": "^4.6.0",
+    "standard": "^12.0.1"
   }
 }
