@@ -16,7 +16,7 @@ This module can be used for Node.js as well as browsers using [Browserify](https
 ## Usage
 
 ```js
-import _sum from 'sum-by'
+const _sum = require('sum-by')
 
 _sum([1, 2, 3])
 // => 6
@@ -48,8 +48,8 @@ npm run benchmark
 
 |                       | Size (uglify + gzip) | Performance        | Performance (with iteratee) |
 |-----------------------|----------------------|--------------------|-----------------------------|
-| sum-by                | 200 bytes            | 26,315,054 ops/sec | 7,811,346 ops/sec           |
-| lodash.sumby          | 5,235 bytes          | 19,135,383 ops/sec | 7,312,857 ops/sec           |
+| sum-by                | 137 bytes            | 33,122,315 ops/sec | 18,384,946 ops/sec           |
+| lodash.sumby          | 5,233 bytes          | 55,096,395 ops/sec | 16,677,060 ops/sec           |
 
 ## Licence
 
