@@ -5,8 +5,14 @@ module.exports = function (array, iteratee) {
   }
 
   // Make sure the default iteratee function just returns the value
-  iteratee = iteratee || identity
+  if (!iteratee) {
+    return sumBy(array, identity)
+  }
 
+  return sumBy(array, iteratee)
+}
+
+function sumBy (array, iteratee) {
   // Sum up all truthy values (in case the iteratee function returns undefined)
   let sum = 0
 

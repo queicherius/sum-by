@@ -1,7 +1,7 @@
 # sum-by
 
 [![Build Status](https://img.shields.io/travis/queicherius/sum-by.svg?style=flat-square)](https://travis-ci.org/queicherius/sum-by)
-[![Coverage Status](https://img.shields.io/codecov/c/github/queicherius/sum-by/master.svg?style=flat-square)](https://codecov.io/github/queicherius/sum-by)
+[![Coverage Status](https://img.shields.io/codecov/c/github/queicherius/sum-by/master.svg?style=flat-square)](https://codecov.io/github/queicherius/sum-by) [![Greenkeeper badge](https://badges.greenkeeper.io/queicherius/sum-by.svg)](https://greenkeeper.io/)
 
 > Sum the elements of an array with an optional iteratee function
 
