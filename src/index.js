@@ -1,4 +1,4 @@
-module.exports = function sumBy (array, iteratee) {
+module.exports = function (array, iteratee) {
   // Exit out if the array is not existent
   if (!array || array.length === 0) {
     return 0
@@ -8,7 +8,11 @@ module.exports = function sumBy (array, iteratee) {
   if (!iteratee) {
     return sumBy(array, identity)
   }
+  
+  return sumBy(array, iteratee)
+}
 
+function sumBy (array, iteratee) {
   // Sum up all truthy values (in case the iteratee function returns undefined)
   let sum = 0
 
@@ -16,7 +20,7 @@ module.exports = function sumBy (array, iteratee) {
     sum += iteratee(array[i]) || 0
   }
 
-  return sum
+  return sum 
 }
 
 function identity (value) {
