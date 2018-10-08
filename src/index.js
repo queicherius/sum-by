@@ -1,11 +1,13 @@
-module.exports = function (array, iteratee) {
+module.exports = function sumBy (array, iteratee) {
   // Exit out if the array is not existent
   if (!array || array.length === 0) {
     return 0
   }
 
   // Make sure the default iteratee function just returns the value
-  iteratee = iteratee || identity
+  if (!iteratee) {
+    return sumBy(array, identity)
+  }
 
   // Sum up all truthy values (in case the iteratee function returns undefined)
   let sum = 0
