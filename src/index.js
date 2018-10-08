@@ -8,7 +8,7 @@ module.exports = function (array, iteratee) {
   if (!iteratee) {
     return sumBy(array, identity)
   }
-  
+
   return sumBy(array, iteratee)
 }
 
@@ -20,7 +20,7 @@ function sumBy (array, iteratee) {
     sum += iteratee(array[i]) || 0
   }
 
-  return sum 
+  return sum
 }
 
 function identity (value) {
